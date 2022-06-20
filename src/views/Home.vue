@@ -1,16 +1,18 @@
 <template>
-  <div>
-    <p class="text-red-400 dark:text-green-400">vue3技术栈项目模板。</p>
-    <el-button type="primary">test</el-button>
-    <p>{{msg}}</p>
-  </div>
+<div>
+  <el-button @click="test" type="primary">test</el-button>
+</div>
 </template>
 
-<script setup lang="ts">
-import { ElButton } from 'element-plus'
-const msg = $('default msg')
+<script lang="ts" setup>
+import { ElMessage } from 'element-plus'
+import 'element-plus/theme-chalk/el-message.css'
+
+const { log } = console
+const msg = $ref('default msg')
+
+const test = () => {
+  log('msg: ', msg)
+  ElMessage(msg)
+}
 </script>
-
-<style lang="scss">
-
-</style>
