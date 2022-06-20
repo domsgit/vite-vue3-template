@@ -1,0 +1,37 @@
+{
+  "name": "vite-vue3-template",
+  "description": "vite+vue3技术栈项目模板。",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "serve": "vite serve",
+    "build": "vite build",
+    "ncu": "ncu -u || (npm i -g ncu && ncu -u)"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^1.1.4",
+    "@vueuse/core": "^8.1.2",
+    "core-js": "^3.21.1",
+    "element-plus": "^2.1.4",
+    "pinia": "^2.0.12",
+    "vue": "^3.2.37",
+    "vue-router": "^4.0.14"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.4",
+    "@vitejs/plugin-vue-jsx": "1.3.8",
+    "@vue/compiler-sfc": "^3.2.31",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "typescript": "~4.6.2",
+    "unplugin-auto-import": "^0.6.6",
+    "unplugin-vue-components": "0.18.3",
+    "unplugin-vue-define-options": "0.5.0",
+    "vite": "^2.8.6",
+    "vite-plugin-inspect": "0.4.3",
+    "vite-plugin-mkcert": "1.6.0",
+    "vite-plugin-windicss": "^1.8.3",
+    "windicss": "^3.5.1"
+  }
+}
